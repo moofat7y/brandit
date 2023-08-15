@@ -2,26 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body *:focus-visible {
+  outline: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.swiper-pagination {
+  z-index: 20;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: block;
+  margin: 0px !important;
+  background-color: transparent !important;
+}
+
+.swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid gray;
+  cursor: pointer;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  transition: 0.3s width, 0.3s height;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  width: 13px !important;
+  height: 13px !important;
+  border-color: #112137;
+  background-color: transparent;
+  border-width: 3px;
+}
+
+.primary-btn {
+  color: #041e42;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.primary-btn::before {
+  background-color: #e8b336;
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: -1;
+  -webkit-transform: skew(50deg);
+  -moz-transform: skew(50deg);
+  -o-transform: skew(50deg);
+  transform: skew(50deg);
+  -webkit-transition: width 0.6s;
+  -moz-transition: width 0.6s;
+  -o-transition: width 0.6s;
+  transition: width 0.6s;
+  transform-origin: top left;
+}
+.primary-btn:hover::before {
+  height: 100%;
+  width: 200%;
+}
+
+.lastProd-image {
+  background-image: url("../../public/static/home2-bg2.png");
+}
+
+footer {
+  background-image: url("../../public/static/footer-bg-img-home2.png");
+  background-position: center;
+  background-size: cover;
 }
