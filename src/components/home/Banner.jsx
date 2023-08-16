@@ -40,8 +40,7 @@ export default function Banner() {
                 <Image
                   src={image.image}
                   fill
-                  priority={false}
-                  quality={100}
+                  loading="eager"
                   placeholder="blur"
                   className="w-full h-full object-left md:object-center object-cover bg-center"
                 />

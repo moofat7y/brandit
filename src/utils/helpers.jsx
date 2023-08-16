@@ -157,7 +157,13 @@ export const upcoming = [
 import { TbTruckDelivery } from "react-icons/tb";
 import { LuShieldCheck } from "react-icons/lu";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
-import { BsCreditCard2Front } from "react-icons/bs";
+import {
+  BsCreditCard2Front,
+  BsFacebook,
+  BsInstagram,
+  BsTwitter,
+  BsWhatsapp,
+} from "react-icons/bs";
 export const storeFeatures = [
   {
     icon: <TbTruckDelivery />,
@@ -178,5 +184,102 @@ export const storeFeatures = [
     icon: <BsCreditCard2Front />,
     title: "Flexible Payment",
     description: "Pay with Multiple Credit Cards",
+  },
+];
+
+export const footerData = [
+  {
+    title: "About Brandit",
+    pages: [
+      {
+        name: "Track your order",
+        href: "/order-tracking",
+      },
+      {
+        name: "Product Guides",
+        href: "/product-guides",
+      },
+      {
+        name: "Wishlist",
+        href: "/wishlist",
+      },
+      {
+        name: "Privacy Policy",
+        href: "/privacy-policy",
+      },
+      {
+        name: "Store Locator",
+        href: "/store-locator",
+      },
+    ],
+  },
+  {
+    title: "Customer Support",
+    pages: [
+      {
+        name: "Contact Us",
+        href: "/contact-us",
+      },
+      {
+        name: "Help Center",
+        href: "/help",
+      },
+      {
+        name: "Returns & Exchanges",
+        href: "/returns",
+      },
+      {
+        name: "Best Buy Financing",
+        href: "/best-buy",
+      },
+      {
+        name: "Best Buy Gift Card",
+        href: "/best-gift",
+      },
+    ],
+  },
+  {
+    title: "Services",
+    pages: [
+      {
+        name: "Geek Squad",
+        href: "/geek-squad",
+      },
+      {
+        name: "In-Home Advisor",
+        href: "/in-home",
+      },
+      {
+        name: "Trade-In Program",
+        href: "/trade",
+      },
+      {
+        name: "Electronics Recycling",
+        href: "/recycling",
+      },
+      {
+        name: "Best Buy Health",
+        href: "/best-buy-health",
+      },
+    ],
+  },
+];
+
+export const socialLinks = [
+  {
+    icon: <BsFacebook />,
+    href: "https://www.facebook.com/mohammed.fathy.562114/",
+  },
+  {
+    icon: <BsInstagram />,
+    href: "https://www.instagram.com/moo.fat7y/",
+  },
+  {
+    icon: <BsWhatsapp />,
+    href: "https://wa.me/201005550942",
+  },
+  {
+    icon: <BsTwitter />,
+    href: "https://twitter.com/moo_fat7y",
   },
 ];
