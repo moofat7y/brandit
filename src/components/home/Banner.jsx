@@ -1,6 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+
+import Section from "../Section";
+import { bannerImages } from "@/utils/helpers";
+
 import { motion } from "framer-motion";
 
 // Import Swiper React components
@@ -10,10 +15,6 @@ import { Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-import Section from "../Section";
-import { bannerImages } from "@/utils/helpers";
-import Link from "next/link";
 
 export default function Banner() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -39,6 +40,8 @@ export default function Banner() {
               <SwiperSlide key={index} className="w-full h-full relative">
                 <Image
                   src={image.image}
+                  alt={image.offer}
+                  priority={false}
                   fill
                   loading="eager"
                   placeholder="blur"

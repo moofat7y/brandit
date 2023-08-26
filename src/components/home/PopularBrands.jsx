@@ -55,6 +55,7 @@ export default function PopularBrands() {
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     src={brand.image}
+                    alt="ll"
                   />
                 </div>
                 <div className="font-semibold text-primary-500 text-sm">

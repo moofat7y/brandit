@@ -49,6 +49,7 @@ export default function PopulerCategories() {
                     width={"auto"}
                     height={"auto"}
                     src={item.image}
+                    alt="image"
                   />
                 </div>
               </div>

@@ -276,7 +276,7 @@ export const socialLinks = [
   },
   {
     icon: <BsWhatsapp />,
-    href: "https://wa.me/201005550942",
+    href: "https://wa.me/201001343304",
   },
   {
     icon: <BsTwitter />,

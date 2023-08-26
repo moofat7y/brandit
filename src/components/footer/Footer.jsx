@@ -1,5 +1,6 @@
-import { footerData, socialLinks } from "@/utils/helpers";
 import React from "react";
+
+import { footerData, socialLinks } from "@/utils/helpers";
 
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 
@@ -35,7 +36,7 @@ export default function Footer() {
                     className="hover:text-secondary-500 duration-150"
                     href="tel:01001343304"
                   >
-                    +201 001 334 3304
+                    +20 100 134 3304
                   </a>
                 </div>
               </li>
@@ -100,7 +101,11 @@ export default function Footer() {
                     key={index}
                     className="hover:text-secondary-500 duration-200"
                   >
-                    <a className="text-md duration-150" href={item.href}>
+                    <a
+                      target="_blank"
+                      className="text-md duration-150"
+                      href={item.href}
+                    >
                       {item.icon}
                     </a>
                   </li>
